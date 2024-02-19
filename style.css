@@ -1,0 +1,135 @@
+:root {
+  /* CSS HEX */
+--true-blue: #0466c8ff;
+--sapphire: #0353a4ff;
+--yale-blue: #023e7dff;
+--oxford-blue: #002855ff;
+--oxford-blue-2: #001845ff;
+--oxford-blue-3: #001233ff;
+--delft-blue: #33415cff;
+--paynes-gray: #5c677dff;
+--slate-gray: #7d8597ff;
+--cool-gray: #979dacff;
+}
+
+/*==================================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+  }
+  
+  .header-hero {
+    /* height: 400px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255 0 0 / 23%); */
+    background-color: rgb(70, 70, 70);
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+  
+  .header-hero h1{
+    margin: 0;
+    font-size: 6rem;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+
+/*==================================================*/
+
+.post-card{
+    background-color: rgb(255 0 0 / 23%);
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.animate-color-bg {
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg,  yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+
+
+  .sts-footer{
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(0 0 255 / 23%);
+    border-radius: 10rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+/* SCSS RGB */
+/* $true-blue: rgba(4, 102, 200, 1);
+$sapphire: rgba(3, 83, 164, 1);
+$yale-blue: rgba(2, 62, 125, 1);
+$oxford-blue: rgba(0, 40, 85, 1);
+$oxford-blue-2: rgba(0, 24, 69, 1);
+$oxford-blue-3: rgba(0, 18, 51, 1);
+$delft-blue: rgba(51, 65, 92, 1);
+$paynes-gray: rgba(92, 103, 125, 1);
+$slate-gray: rgba(125, 133, 151, 1);
+$cool-gray: rgba(151, 157, 172, 1); */
