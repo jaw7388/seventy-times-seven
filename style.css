@@ -31,8 +31,15 @@ body {
     background-color: rgb(70, 70, 70);
     margin-bottom: 3rem;
     padding: 2rem;
+    
   }
-  
+
+    @media (max-width: 767px) {
+        .header-hero h1{
+            font-size: 3rem;
+        }
+    }
+
   .header-hero h1{
     margin: 0;
     font-size: 6rem;
@@ -115,7 +122,8 @@ body {
   }
 
 
-
+  
+}
 
 
 
